@@ -52,3 +52,19 @@ function pause() {
   showButton("PLAY");
   console.log(elapsedTime);
 }
+
+function reset() {
+  clearInterval(timerInterval);
+  print("00:00:00");
+  elapsedTime = 0;
+  showButton("PLAY");
+}
+
+// event listeners
+let playButton = document.getElementById("playButton");
+let pauseButton = document.getElementById("pauseButton");
+let resetButton = document.getElementById("resetButton");
+
+playButton.addEventListener("click", start);
+pauseButton.addEventListener("click", pause);
+resetButton.addEventListener("click", reset);
