@@ -19,3 +19,30 @@ function timeToString(time) {
 
   return `${formattedHH}:${formattedMM}:${formattedSS}`; //00:00:00
 }
+
+let startTime;
+let elapsedTime = 0;
+let timerInterval;
+
+// display the time on the DOM
+function print(txt) {
+  document.getElementById("display").innerHTML = txt;
+}
+
+// function to display buttons
+function showButton(buttonKey) {
+  const buttonToShow = buttonKey === "PLAY" ? playButton : pauseButton;
+  const buttonToHide = buttonKey === "PLAY" ? pauseButton : playButton;
+  buttonToShow.style.display = "block";
+  buttonToHide.style.display = "none";
+}
+
+function start() {
+  startTime = Date.now() - elapsedTime; // so that after pause the timer starts from where it stops
+  console.log("start -> startTime", startTime);
+  timerInterval = setInterval(function printTime() {
+    elapsedTime = Date.now() - startTime;
+    print(timeToString(elapsedTime));
+  }, 1000);
+  showButton("PAUSE");
+}
