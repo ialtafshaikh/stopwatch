@@ -46,3 +46,9 @@ function start() {
   }, 1000);
   showButton("PAUSE");
 }
+
+function pause() {
+  clearInterval(timerInterval);
+  showButton("PLAY");
+  console.log(elapsedTime);
+}
