@@ -39,7 +39,6 @@ function showButton(buttonKey) {
 
 function start() {
   startTime = Date.now() - elapsedTime; // so that after pause the timer starts from where it stops
-  console.log("start -> startTime", startTime);
   timerInterval = setInterval(function printTime() {
     elapsedTime = Date.now() - startTime;
     print(timeToString(elapsedTime));
@@ -50,7 +49,6 @@ function start() {
 function pause() {
   clearInterval(timerInterval);
   showButton("PLAY");
-  console.log(elapsedTime);
 }
 
 function reset() {
