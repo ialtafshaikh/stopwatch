@@ -27,7 +27,7 @@ You need to have a basic knowledge of HTML, CSS and JavaScript under your belt. 
 
 ## Sample Working
 
-![gif](https://github.com/ialtafshaikh/stopwatch/raw/master/documentation/captured.gif)
+![gif](https://github.com/ialtafshaikh/static-files/raw/master/gifs/timer-app-demo.gif)
 
 ### Downloading and Running this Project Locally
 1. clone the repository using below command
