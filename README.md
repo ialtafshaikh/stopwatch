@@ -42,7 +42,7 @@ To Host the Project I had used Github Pages. To learn more [visit her](https://t
 
 ## Live Demo of this Project
 
-[Live Working](https://github.com/ialtafshaikh/stopwatch)
+[Live Working](https://ialtafshaikh.github.io/stopwatch/)
 
 ## References
 - [Build Stopwatch from HTML-CSS-JS-part-1](https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-1/)
